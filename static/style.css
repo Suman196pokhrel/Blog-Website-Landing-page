@@ -220,6 +220,9 @@ a{
      flex: 1;
 
 }
+.postTitle i{
+     font-size: 25px;
+}
 
 .postContent{
      font-family: 'Poppins', sans-serif;
@@ -234,24 +237,36 @@ a{
      flex-direction: row;
      justify-content: space-evenly;
      align-items: center;
-     gap: 5px;
      flex: 1;
 }
 
 .edit1{
-     padding: 5px 19px 5px 19px;
+     padding: 10px;
      background: #1B79BC;
+     border-radius: 5px;
+     color: white;
+     border: none;
+     margin-right: 5px;
+}
+
+.delete1{
+     padding: 10px;
+     background: #DB1717;
      border-radius: 5px;
      color: white;
      border: none;
 }
 
-.delete1{
-     padding: 5px 19px 5px 19px;
-     background: #DB1717;
-     border-radius: 5px;
-     color: white;
-     border: none;
+.btns1 button:hover{
+     transform: scale(1.1);
+}
+
+.edit1:active{
+     background-color: #114368;
+}
+
+.delete1:active{
+     background-color: #630c0c;
 }
 
 
