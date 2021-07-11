@@ -269,6 +269,15 @@ a{
      background-color: #630c0c;
 }
 
+@media screen and (max-width: 480px){
+     .posts{
+          display: flex;
+          flex-direction: column;
+          height: 25%;
+          width: 70%;
+     }
+}
+
 
 
 
