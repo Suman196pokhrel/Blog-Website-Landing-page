@@ -20,6 +20,7 @@
      <!-- stylesheet -->
      <link rel="stylesheet" href="./static/style.css">
 
+
      <title> Coders Blog</title>
      <link rel="icon" href="static/Laptop Coding.png" type="image">
 
@@ -79,7 +80,7 @@
                </div>
 
                <div class="postsCards">
-                    <div class="posts">
+                    <div class="posts" data-tilt>
                          <div class="postTitle">
                               <i class="fa fa-calendar-check fa-2x" aria-hidden="true" style="margin-right: 10px;margin-bottom: 10px;"></i>                              
                               <p>Day-1</p>
@@ -94,7 +95,7 @@
                          </div>
                     </div>
 
-                    <div class="posts">
+                    <div class="posts" data-tilt>
                          <div class="postTitle">
                               <i class="fa fa-calendar-check fa-2x" aria-hidden="true" style="margin-right: 10px;margin-bottom: 10px;"></i>                              
                               <p>Day-2</p>
@@ -110,7 +111,7 @@
                     </div>
 
 
-                    <div class="posts">
+                    <div class="posts" data-tilt>
                          <div class="postTitle">
                               <i class="fa fa-calendar-check fa-2x" aria-hidden="true" style="margin-right: 10px;margin-bottom: 10px;"></i>                              
                               <p>Day-3</p>
@@ -126,7 +127,7 @@
                     </div>
 
 
-                    <div class="posts">
+                    <div class="posts" data-tilt>
                          <div class="postTitle">
                               <i class="fa fa-calendar-check fa-2x" aria-hidden="true" style="margin-right: 10px;margin-bottom: 10px;"></i>                              
                               <p>Day-4</p>
@@ -142,7 +143,7 @@
                     </div>
 
 
-                    <div class="posts">
+                    <div class="posts" data-tilt>
                          <div class="postTitle">
                               <i class="fa fa-calendar-check fa-2x" aria-hidden="true" style="margin-right: 10px;margin-bottom: 10px;"></i>                              
                               <p>Day-5</p>
@@ -158,7 +159,7 @@
                     </div>
 
 
-                    <div class="posts">
+                    <div class="posts" data-tilt>
                          <div class="postTitle">
                               <i class="fa fa-calendar-check fa-2x" aria-hidden="true" style="margin-right: 10px;margin-bottom: 10px;"></i>                              
                               <p>Day-6</p>
@@ -174,7 +175,7 @@
                     </div>
 
 
-                    <div class="posts">
+                    <div class="posts" data-tilt >
                          <div class="postTitle">
                               <i class="fa fa-calendar-check fa-2x" aria-hidden="true" style="margin-right: 10px;margin-bottom: 10px;"></i>                              
                               <p>Day-7</p>
@@ -230,6 +231,19 @@
 
 
      <!-- </div> -->
+
+
+
+<script src="./js/vanilla-tilt.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".homeCard"), {
+		max: 3,
+		speed: 400
+	});
+	
+	//It also supports NodeList
+	VanillaTilt.init(document.querySelectorAll(".homeCard"));
+</script>
 
 
 </body>

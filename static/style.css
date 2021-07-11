@@ -66,14 +66,26 @@ a{
      font-family: 'Red Hat Text', sans-serif;
      font-size: 12px;
      height: 100%;
-     transition: 0.3s;
+     transition: 0.2s;
 }
 
 .linkItem{
      border-right: 1px solid rgb(32, 32, 32);
      padding: 5px;
      transition: 0.2s;
+     cursor: pointer;
 }
+
+
+.linkItem a:hover{
+     font-size: 17px;
+     color: white;
+     font-weight: bolder;
+
+     border-bottom: 2px solid white;
+     
+}
+
 
 
 /* MainCOntents */
@@ -144,6 +156,7 @@ a{
      border-radius: 5px;
      color: white;
      border: none;
+     transition: 0.1s;
 }
 
 .delete{
@@ -152,6 +165,19 @@ a{
      border-radius: 5px;
      color: white;
      border: none;
+     transition: 0.1s;
+}
+
+.btns button:hover{
+     transform: scale(1.1);
+}
+
+.edit:active{
+     background-color: #075e10;
+}
+
+.delete:active{
+     background-color: #630c0c;
 }
 
 .postsCards{
@@ -214,7 +240,7 @@ a{
 
 .edit1{
      padding: 5px 19px 5px 19px;
-     background: #08A718;
+     background: #1B79BC;
      border-radius: 5px;
      color: white;
      border: none;
